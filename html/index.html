@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>The 10th KAC Unofficial DDR Rankings</title>
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="Unnoficial rankings for the 10th KAC qualifier songs in Dance Dance Revolution A20 PLUS.">
+    <meta name="keywords" content="DDR, A20 PLUS, 10th KAC, qualifiers, rankings">
+    <meta name="author" content="Seth Courcelle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163135335-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163135335-1');
+    </script>
+
+    <LINK rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Poppins' />
+    <LINK rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Josefin+Sans' />
+    <LINK rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Muli' />
+    <LINK rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Inconsolata' />
+    <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://3icecream.com/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://3icecream.com/css/m_common.css">
+    <link rel="stylesheet" type="text/css" href="https://3icecream.com/css/kac.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./lib/sweetalert2.all.min.js"></script>
+    <script src="./lib/fastclick.js"></script>
+    <script src="./lib/tippy.all.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script type="text/javascript">
+        var time = new Date();
+        let seconds = time.getSeconds;
+    </script>
+    <script src="./js/kacstandings.js?random=" + seconds></script> <!-- to prevent browser from caching scores-->
+    <script src="./js/kac.js"></script>
+
+    <script type="text/javascript">
+        var xpstr_common = {
+            VERY_RECENTLY: "very recently",
+            n_MINS_AGO: "{n} mins ago",
+            n_HOURS_AGO: "{n} hours ago",
+            n_DAYS_AGO: "{n} days ago",
+            n_YEARS_AGO: "{n} year(s) ago",
+            SOME_TIME_IN_THE_FUTURE: "some time in the future",
+            SHORT_MONTH_1: "Jan",
+            SHORT_MONTH_2: "Feb",
+            SHORT_MONTH_3: "Mar",
+            SHORT_MONTH_4: "Apr",
+            SHORT_MONTH_5: "May",
+            SHORT_MONTH_6: "Jun",
+            SHORT_MONTH_7: "Jul",
+            SHORT_MONTH_8: "Aug",
+            SHORT_MONTH_9: "Sep",
+            SHORT_MONTH_10: "Oct",
+            SHORT_MONTH_11: "Nov",
+            SHORT_MONTH_12: "Dec",
+            SHORT_DAY_OF_WEEK_0: "Sun",
+            SHORT_DAY_OF_WEEK_1: "Mon",
+            SHORT_DAY_OF_WEEK_2: "Tue",
+            SHORT_DAY_OF_WEEK_3: "Wed",
+            SHORT_DAY_OF_WEEK_4: "Thu",
+            SHORT_DAY_OF_WEEK_5: "Fri",
+            SHORT_DAY_OF_WEEK_6: "Sat",
+            DATE_FORMAT_y_m_d: "{m} {d}, {y}",
+            DATE_FORMAT_w_y_m_d_h_M_s_tz: "{w} {m} {d} {y} {h}:{M}:{s} {tz}",
+            NO_RECENT_DATA: "No recent data",
+            LOADING_MSG: "Please wait...",
+            SINGLES_TOOLTIP: "Single Play view mode",
+            DOUBLES_TOOLTIP: "Double Play view mode",
+            DDR_VERSION_0: "?",
+            DDR_VERSION_1: "1st",
+            DDR_VERSION_2: "2nd",
+            DDR_VERSION_3: "3rd",
+            DDR_VERSION_4: "4th",
+            DDR_VERSION_5: "5th",
+            DDR_VERSION_6: "MAX",
+            DDR_VERSION_7: "MAX2",
+            DDR_VERSION_8: "Extreme",
+            DDR_VERSION_9: "SuperNOVA",
+            DDR_VERSION_10: "SuperNOVA2",
+            DDR_VERSION_11: "X",
+            DDR_VERSION_12: "X2",
+            DDR_VERSION_13: "X3 vs 2nd",
+            DDR_VERSION_14: "2013",
+            DDR_VERSION_15: "2014",
+            DDR_VERSION_16: "A",
+            DDR_VERSION_17: "A20",
+            DDR_VERSION_18: "A20 PLUS",
+            MSG_SWITCH_TO_SP_VIEW: "Switch to Single play view mode?",
+            MSG_SWITCH_TO_DP_VIEW: "Switch to Double play view mode?",
+            SWITCH_SPDP_VIEW_ERROR_MSG: "Error while switching view mode; please try again later.",
+            SWITCH: "Switch",
+            OKAY: "OK",
+            CANCEL: "Cancel",
+            SEARCH: "Search",
+        };
+
+        let KAC_SONGS = [{
+            "song_id": "IlbI1QQOPI0o0IdoPI6QPldqQob16DOq",
+            "notes": 782,
+            "holds": 8,
+            "song_name": "ナイト・オブ・ナイツ (Ryu☆Remix)"
+        }, {
+            "song_id": "I9Ob6PlIiOQl6iQ6qO6QO0iQ1ld9DDO0",
+            "notes": 587,
+            "holds": 36,
+            "song_name": "BLSTR"
+        }, {
+            "song_id": "b1do8OI6qDDlQO0PI16868ql6bdbI886",
+            "notes": 639,
+            "holds": 79,
+            "song_name": "Splash Gold"
+        }, {
+            "song_id": "l9QibD8IoooD9DIl1O8Q0lo89I9qdido",
+            "notes": 706,
+            "holds": 40,
+            "song_name": "世界の果てに約束の凱歌を -DDR Extended Megamix-"
+        }, {
+            "song_id": "Q9l0i6DPO08obldq101ldDioiqdIDqlq",
+            "notes": 639,
+            "holds": 13,
+            "song_name": "タイガーランペイジ"
+        }, {
+            "song_id": "18l0blb188Oqqi8I68o8oq91Qbq86QDi",
+            "notes": 645,
+            "holds": 85,
+            "song_name": "Magnetic"
+        }, {
+            "song_id": "oIII9lI0q6i9Q0b18ldoI6o0PQ0qqD01",
+            "notes": 730,
+            "holds": 70,
+            "song_name": "Come to Life"
+        }, {
+            "song_id": "OiIOPd80d9PQQIbidO6ObioboO88OD9l",
+            "notes": 860,
+            "holds": 22,
+            "song_name": "Elemental Creation"
+        }, {
+            "song_id": "6obQo6d0oQ6QoQql0I60b81IO8IOl1IO",
+            "notes": 622,
+            "holds": 35,
+            "song_name": "Air Heroes"
+        }, {
+            "song_id": "b80qOO6l8060990qQPod1bOd8Q9d69qo",
+            "notes": 625,
+            "holds": 14,
+            "song_name": "The World Ends Now"
+        }, {
+            "song_id": "obd0PDIDq8qqd9q9qdbDdqD98bd61I8D",
+            "notes": 449,
+            "holds": 14,
+            "song_name": "SWEET HOME PARTY"
+        }, {
+            "song_id": "QoDQ0oq08QqiI0DQ8dIPb10qIi6d6i89",
+            "notes": 690,
+            "holds": 33,
+            "song_name": "腐れ外道とチョコレゐト"
+        }, {
+            "song_id": "1I9ODbQ81qi1006QoQI6d6dbd9iiPD9O",
+            "notes": 681,
+            "holds": 55,
+            "song_name": "Idola"
+        }, {
+            "song_id": "00obPO6oPIPOoD9qb0dIl6q6D8P6o9bI",
+            "notes": 753,
+            "holds": 49,
+            "song_name": "IX"
+        }, {
+            "song_id": "io1d1Dq80Di08O1Pb9bQ8DoP9d9Ooi90",
+            "notes": 662,
+            "holds": 1,
+            "song_name": "PARANOiA ～HADES～"
+        }];
+        let KAC_SONGS_CATEGORY_2 = [{
+            "song_id": "IlbI1QQOPI0o0IdoPI6QPldqQob16DOq",
+            "notes": 782,
+            "holds": 8,
+            "song_name": "ナイト・オブ・ナイツ (Ryu☆Remix)"
+        }, {
+            "song_id": "I9Ob6PlIiOQl6iQ6qO6QO0iQ1ld9DDO0",
+            "notes": 587,
+            "holds": 36,
+            "song_name": "BLSTR"
+        }, {
+            "song_id": "b1do8OI6qDDlQO0PI16868ql6bdbI886",
+            "notes": 639,
+            "holds": 79,
+            "song_name": "Splash Gold"
+        }, {
+            "song_id": "l9QibD8IoooD9DIl1O8Q0lo89I9qdido",
+            "notes": 706,
+            "holds": 40,
+            "song_name": "世界の果てに約束の凱歌を -DDR Extended Megamix-"
+        }, {
+            "song_id": "Q9l0i6DPO08obldq101ldDioiqdIDqlq",
+            "notes": 639,
+            "holds": 13,
+            "song_name": "タイガーランペイジ"
+        }, {
+            "song_id": "18l0blb188Oqqi8I68o8oq91Qbq86QDi",
+            "notes": 645,
+            "holds": 85,
+            "song_name": "Magnetic"
+        }, {
+            "song_id": "oIII9lI0q6i9Q0b18ldoI6o0PQ0qqD01",
+            "notes": 730,
+            "holds": 70,
+            "song_name": "Come to Life"
+        }, {
+            "song_id": "OiIOPd80d9PQQIbidO6ObioboO88OD9l",
+            "notes": 860,
+            "holds": 22,
+            "song_name": "Elemental Creation"
+        }, {
+            "song_id": "6obQo6d0oQ6QoQql0I60b81IO8IOl1IO",
+            "notes": 622,
+            "holds": 35,
+            "song_name": "Air Heroes"
+        }, {
+            "song_id": "Ol8PPooqO8iOqQ6900o0q0QI9dPo0O0b",
+            "notes": 542,
+            "holds": 19,
+            "song_name": "Rampage Hero"
+        }, {
+            "song_id": "bD1DbibPIq9IIlQd0OIIl0o91QI1il69",
+            "notes": 651,
+            "holds": 52,
+            "song_name": "Monkey Business"
+        }, {
+            "song_id": "QQldo10ObPPQPlliODiDIIl0Q1oPoo61",
+            "notes": 573,
+            "holds": 110,
+            "song_name": "ΔMAX"
+        }, {
+            "song_id": "Q9Q088PPd0bPi9QQ8iil1lQqPdiQP69D",
+            "notes": 739,
+            "holds": 25,
+            "song_name": "恋する☆宇宙戦争っ!!"
+        }, {
+            "song_id": "Pi69o0idP1obO9QDqIDbPdqlb90q8Dq8",
+            "notes": 763,
+            "holds": 27,
+            "song_name": "嘆きの樹"
+        }, {
+            "song_id": "o0l1Qioq1i9iQl6b9q6il0iqi1b1OQ9b",
+            "notes": 543,
+            "holds": 49,
+            "song_name": "New Decade"
+        }];
+        let profileLinks = {
+            "FINGA": "sudosiciya",
+            "RASIS-V": "RASIS-V",
+            "GOMACHAN": "shan30105743",
+            "ITUTI": "ITUTI",
+            "KAWAUSO": "kawauso",
+            "LOTUS.": "LOTUS.",
+            "U-KI": "U-ki",
+            "SOTSURON": "son_suke",
+            "LGNDYMKX": "YUMIKO",
+            "PIERO": "bluepierrot",
+            "96GOMA": "96goma",
+            "25THWARD": "sby888",
+            "GINXYASU": "GINXYASU",
+            "YOSHIMIZ": "Yoshimiz",
+            "NOTTY": "notty",
+            "KOIKING": "koiking213",
+            "NAKASON": "nakason",
+            "S.CARMIN": "scarmin",
+            "THOR": "thoriidx",
+            "RABBIT.N": "らびさま",
+            "LAPIS": "Lapis"
+        };
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+
+            let attachFastClick = Origami.fastclick;
+            attachFastClick(document.body);
+
+            hookupDropdownMenu();
+
+            if (lastUpdateUnixSec > 0) $('#sp-last-update').text(xpstr.LAST_UPDATED_timestamp.replace(
+                '{timestamp}', humanDateTimeFromUnixSec(lastUpdateUnixSec)));
+
+            if (getCookie('viewmode') === 'delta') {
+                $('#div-toggle-score-mode').text(xpstr.USE_SCORE_VIEW_MODE);
+                viewMode = 1;
+            }
+
+            decompressData(KAC_STANDINGS);
+            bucketMasterData();
+            switchTable(1);
+            renderPageNav();
+            gotoPage(0);
+
+            wrapJpnText('th');
+
+        });
+
+        var xpstr = {
+            SEARCH_PLAYER_TITLE: "Search by dancer name:",
+            SEARCH: "Search",
+            CANCEL: "Cancel",
+            PLAYER_NOT_FOUND_MSG_name: "No player found in ranking with name {name}",
+            USE_SCORE_VIEW_MODE: "View absolute scores",
+            USE_DELTA_VIEW_MODE: "View score deltas",
+            LAST_UPDATED_timestamp: "Last updated: {timestamp}",
+        };
+    </script>
+    <style>
+        .div-left-name {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body style="margin:auto">
+    <nav>
+        <p><a href="http://www.sessu.net">sessu.net</a> &gt; The 10th KAC Unofficial DDR Rankings</p>
+    </nav>
+
+    <header>
+        <h1 class="sp-page-header">The 10th KAC<br>Unofficial DDR Rankings</h1>
+        <a href="https://3icecream.com/"><span class="sp-subtitle">Powered by <img class="img-subtitle-logo"
+                    src="./img/title-logo.png"></a>
+    </header>
+
+
+    <div class="div-body">
+        <div class="div-submit" style="background-color: rgb(255, 255, 255);">
+            <p>Submit scores here:</p>
+            <p><a
+                    href="https://docs.google.com/spreadsheets/d/1zJb2nIX6bV5Sm2FGw_OPWfwMZYiyNzJpvdgfUgdrod8">https://docs.google.com/spreadsheets/d/1zJb2nIX6bV5Sm2FGw_OPWfwMZYiyNzJpvdgfUgdrod8</a>
+            </p>
+            <p>Submissions are based on the honor system. It may take up to 30 minutes for your scores to appear on this
+                page.</p>
+        </div>
+
+        <div id="div-filters">
+            <div class="div-filter" id="filter-region-1" onclick="switchTable(1);gotoPage(0);"><span>Free
+                    Division</span></div>
+
+            <div class="div-filter" id="filter-region-2" onclick="switchTable(2);gotoPage(0);"><span>Women&#39;s
+                    Division</span></div>
+        </div>
+
+        <table id="tbl-standings">
+            <div id="div-toggle-score-mode" onclick="toggleScoreMode();">View score deltas
+                <tr class="tr-banner-header">
+                    <th class="th-no-bg" id="th-last-update" colspan="3">
+            </div><span id="sp-last-update"></span></th>
+
+            <th class="th-group-1-img">
+
+                <a href="https://3icecream.com/ddr/song_details/IlbI1QQOPI0o0IdoPI6QPldqQob16DOq">
+                    <img class="img-banner" src="./img/banners//IlbI1QQOPI0o0IdoPI6QPldqQob16DOq.jpg" id="img-banner-1">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-1-img">
+
+                <a href="https://3icecream.com/ddr/song_details/I9Ob6PlIiOQl6iQ6qO6QO0iQ1ld9DDO0">
+                    <img class="img-banner" src="./img/banners//I9Ob6PlIiOQl6iQ6qO6QO0iQ1ld9DDO0.jpg" id="img-banner-2">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-1-img">
+
+                <a href="https://3icecream.com/ddr/song_details/b1do8OI6qDDlQO0PI16868ql6bdbI886">
+                    <img class="img-banner" src="./img/banners//b1do8OI6qDDlQO0PI16868ql6bdbI886.jpg" id="img-banner-3">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-1-img">
+
+                <a href="https://3icecream.com/ddr/song_details/l9QibD8IoooD9DIl1O8Q0lo89I9qdido">
+                    <img class="img-banner" src="./img/banners//l9QibD8IoooD9DIl1O8Q0lo89I9qdido.jpg" id="img-banner-4">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-1-img">
+
+                <a href="https://3icecream.com/ddr/song_details/Q9l0i6DPO08obldq101ldDioiqdIDqlq">
+                    <img class="img-banner" src="./img/banners//Q9l0i6DPO08obldq101ldDioiqdIDqlq.jpg" id="img-banner-5">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-1-img">
+
+                <a href="https://3icecream.com/ddr/song_details/18l0blb188Oqqi8I68o8oq91Qbq86QDi">
+                    <img class="img-banner" src="./img/banners//18l0blb188Oqqi8I68o8oq91Qbq86QDi.jpg" id="img-banner-6">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-1-img">
+
+                <a href="https://3icecream.com/ddr/song_details/oIII9lI0q6i9Q0b18ldoI6o0PQ0qqD01">
+                    <img class="img-banner" src="./img/banners//oIII9lI0q6i9Q0b18ldoI6o0PQ0qqD01.jpg" id="img-banner-7">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-1-img">
+
+                <a href="https://3icecream.com/ddr/song_details/OiIOPd80d9PQQIbidO6ObioboO88OD9l">
+                    <img class="img-banner" src="./img/banners//OiIOPd80d9PQQIbidO6ObioboO88OD9l.jpg" id="img-banner-8">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-2-img">
+
+                <a href="https://3icecream.com/ddr/song_details/6obQo6d0oQ6QoQql0I60b81IO8IOl1IO">
+                    <img class="img-banner" src="./img/banners//6obQo6d0oQ6QoQql0I60b81IO8IOl1IO.jpg" id="img-banner-9">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-2-img">
+
+                <a href="https://3icecream.com/ddr/song_details/b80qOO6l8060990qQPod1bOd8Q9d69qo">
+                    <img class="img-banner" src="./img/banners//b80qOO6l8060990qQPod1bOd8Q9d69qo.jpg"
+                        id="img-banner-10">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-2-img">
+
+                <a href="https://3icecream.com/ddr/song_details/obd0PDIDq8qqd9q9qdbDdqD98bd61I8D">
+                    <img class="img-banner" src="./img/banners//obd0PDIDq8qqd9q9qdbDdqD98bd61I8D.jpg"
+                        id="img-banner-11">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-2-img">
+
+                <a href="https://3icecream.com/ddr/song_details/QoDQ0oq08QqiI0DQ8dIPb10qIi6d6i89">
+                    <img class="img-banner" src="./img/banners//QoDQ0oq08QqiI0DQ8dIPb10qIi6d6i89.jpg"
+                        id="img-banner-12">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-2-img">
+
+                <a href="https://3icecream.com/ddr/song_details/1I9ODbQ81qi1006QoQI6d6dbd9iiPD9O">
+                    <img class="img-banner" src="./img/banners//1I9ODbQ81qi1006QoQI6d6dbd9iiPD9O.jpg"
+                        id="img-banner-13">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-2-img">
+
+                <a href="https://3icecream.com/ddr/song_details/00obPO6oPIPOoD9qb0dIl6q6D8P6o9bI">
+                    <img class="img-banner" src="./img/banners//00obPO6oPIPOoD9qb0dIl6q6D8P6o9bI.jpg"
+                        id="img-banner-14">
+                </a>
+
+            </th>
+
+
+            <th class="th-group-2-img">
+
+                <a href="https://3icecream.com/ddr/song_details/io1d1Dq80Di08O1Pb9bQ8DoP9d9Ooi90">
+                    <img class="img-banner" src="./img/banners//io1d1Dq80Di08O1Pb9bQ8DoP9d9Ooi90.jpg"
+                        id="img-banner-15">
+                </a>
+
+            </th>
+
+
+            </tr>
+
+            <tr class="tr-header">
+                <th class="th-standing">#</th>
+                <th class="th-normal">Dancer Name</th>
+                <th class="th-normal"><span style="cursor: pointer;" onclick="sortMasterDataBySongScore(0);">Total
+                        EX</span></th>
+
+
+                <th class="th-group-1-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(1);">Song 1</span>
+                </th>
+
+
+                <th class="th-group-1-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(2);">Song 2</span>
+                </th>
+
+
+                <th class="th-group-1-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(3);">Song 3</span>
+                </th>
+
+
+                <th class="th-group-1-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(4);">Song 4</span>
+                </th>
+
+
+                <th class="th-group-1-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(5);">Song 5</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(6);">Song 6</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(7);">Song 7</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(8);">Song 8</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(9);">Song 9</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(10);">Song 10</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(11);">Song 11</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(12);">Song 12</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(13);">Song 13</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(14);">Song 14</span>
+                </th>
+
+
+                <th class="th-group-2-name">
+                    <span class="sp-song-title" onclick="sortMasterDataBySongScore(15);">Song 15</span>
+                </th>
+
+
+            </tr>
+
+        </table>
+
+        <p id="p-insp">Code and layout adapted from <a href="https://3icecream.com/kac">Sanbai Ice Cream's KAC rankings
+                page</a>. Used with permission.</p>
+        <p id="p-insp">Idea by <a href="https://twitter.com/BLASTOISEDDR">@BLASTOISEDDR</a>, implemented by <a
+                href="https://twitter.com/_sessu">@_sessu</a></p>
+    </div>
+
+</body>
+
+</html>
